@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+$base:hsl(241, 69%, 78%); // hsl(340, 65%, 72%);  hsl(29, 65%, 72%); hsl(194, 65%, 72%); hsl(226, 65%, 72%); hsl(216, 48%, 72%);
+$background-color: $base;
+$background-text: darken($base, 60%);
+$darker-background: darken($base, 20%); //card background, navbar background
+$darker-background-text: lighten($darker-background, 20%); //card text, navbar text
+$more-darker-background: darken($darker-background, 37%); //for footer
+$more-darker-background-text: lighten($more-darker-background, 55%); //for footer text
+$tab-color: saturate($base, 35%);
+
+//contrast color
+$contrast-base: adjust-hue($base, -33);
+$contrast-hover-darker-background-text: darken($contrast-base, 8%);
+
+$base-font: 10px;
+@function fontSize($base, $scale){
+    @return $base*$scale
+}
+
+$greatest-heading: fontSize($base-font, 4);
+$greater-heading: fontSize($base-font, 3.5);
+$medium-heading: fontSize($base-font, 3);
+$smaller-heading: fontSize($base-font, 2.5);
+$smallest-heading: fontSize($base-font, 2);

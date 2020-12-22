@@ -1,0 +1,45 @@
+@import './theme.scss';
+
+%control-blocks{
+  box-shadow: 0 2px 6px 0px #00000054;
+    display: flex;
+    align-items: center;
+    border-radius: 31px;
+    justify-content: center;
+    background: white;
+    span{
+      &:last-child{
+        line-height: 36px;
+        margin-left: 12px;
+      }
+    }
+}
+
+%block-frame{
+  position: relative;
+  width: 100%;
+}
+
+%content-block{
+  background: white;
+  box-shadow: 0 7px 8px -2px #00000054;
+  border-radius: 12px;
+  height: 100%;
+  .chart{
+    position: relative;
+  }
+}
+
+%heading{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-radius: 12px 12px 0 0;
+  background-image: linear-gradient($tab-color -64%, #ffffff 106%);
+  .title{
+    padding: 19px 0;
+    font-size: 14px;
+    font-weight: bolder;
+  }
+}

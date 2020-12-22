@@ -1,0 +1,33 @@
+@import '@/assets/style/reset/reset.scss';
+@import '@/assets/style/reset/bootstrap-grid.scss';
+@import '@/assets/style/scss/functions.scss';
+@import '@/assets/style/scss/theme.scss';
+
+img{
+    width: 100%;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #00000012;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+    background:$base;
+    border-radius: 100px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: $more-darker-background-text;
+}
