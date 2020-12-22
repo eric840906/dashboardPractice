@@ -5,8 +5,12 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: '',
+    // 預防使用者因為輸入不存在的路徑跑到空白頁面
+    path: '*',
+    redirect: '/login'
+  },
+  {
+    path: '/login',
     component: () => import('../views/login.vue'),
     children: [
       {

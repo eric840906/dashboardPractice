@@ -1,7 +1,7 @@
 <template>
   <div class="login-page">
     <div class="tab-box">
-      <router-link to="/">登入</router-link>
+      <router-link to="/login">登入</router-link>
       <router-link to="/register">註冊</router-link>
     </div>
     <router-view></router-view>
